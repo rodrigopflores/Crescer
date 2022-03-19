@@ -1,0 +1,20 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /tcc-java
+  error:
+    include-message: always
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    username: mrlzsjxgswoykw
+    password: 0f96f8f2066ca2570587f978d8e0cf6e260fd4254fc9b3ca402f21f4ff9b53b3
+    url: jdbc:postgresql://ec2-52-207-47-210.compute-1.amazonaws.com:5432/dbisoi3dki6f0v?currentSchema=public
+    driver-class-name: org.postgresql.Driver
+auth-url: https://crescer-api-auth.herokuapp.com/me
